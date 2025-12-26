@@ -90,13 +90,17 @@
     }
 
     /* ---------- MAIN ---------- */
-    .main {
-      margin-left: 280px;
-      padding: 60px;
-      width: 100%;
-      max-width: 1100px;
-    }
-
+   .main {
+  margin-left: 280px;
+  padding: 60px 60px;
+  width: calc(100% - 280px);
+  display: flex;
+  justify-content: center;
+}
+ .content {
+  max-width: 900px;
+  width: 100%;
+}
     section {
       margin-bottom: 70px;
     }
@@ -197,6 +201,7 @@
 </div>
 
 <div class="main">
+  <div class="content">
 
 <section>
   <h2 data-en="About" data-zh="关于我"></h2>
@@ -350,6 +355,7 @@ These projects focus on reproducibility, scalability, and practical deployment.
 <footer>
   © 2025 Weihua Deng · GitHub Pages
 </footer>
+  </div>
 
 </div>
 
