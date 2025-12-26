@@ -2,100 +2,267 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Dr. Weihua Deng | Data Science Systems</title>
+  <title>Dr. Weihua Deng | Data Science & AI Systems</title>
 
   <!-- SEO -->
-  <meta name="description" content="End-to-end data science systems, cloud analytics dashboards, and AI-assisted engineering projects by Dr. Weihua Deng." />
+  <meta name="description" content="Dr. Weihua Deng – Data Science, AI, Cloud Analytics, and End-to-End Systems" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Social preview -->
-  <meta property="og:title" content="Dr. Weihua Deng – Data Science Systems" />
-  <meta property="og:description" content="End-to-end dashboards, cloud analytics, and AI-assisted engineering." />
+  <!-- Social Preview -->
+  <meta property="og:title" content="Dr. Weihua Deng – Data Science & AI Systems" />
+  <meta property="og:description" content="Education, industry experience, and real-world data science systems." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://deng0529.github.io" />
 
   <style>
+    :root {
+      --primary: #2563eb;
+      --secondary: #0f172a;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #1e293b;
+      --muted: #64748b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #f7f8fa;
-      color: #222;
+      background: var(--bg);
+      color: var(--text);
     }
 
+    /* ---------- NAV ---------- */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      z-index: 100;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 12px 20px;
+      max-width: 1100px;
+      margin-inline: auto;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    /* ---------- LAYOUT ---------- */
     .container {
-      max-width: 900px;
+      max-width: 1100px;
       margin: auto;
-      padding: 40px 20px;
+      padding: 60px 20px;
     }
 
-    h1 {
-      font-size: 2.5rem;
+    header h1 {
+      font-size: 2.8rem;
       margin-bottom: 0.2em;
     }
 
-    h2 {
-      margin-top: 2.5em;
-      border-bottom: 1px solid #ddd;
+    header p {
+      font-size: 1.1rem;
+      color: var(--muted);
+    }
+
+    section {
+      margin-top: 80px;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      border-bottom: 2px solid var(--primary);
+      display: inline-block;
       padding-bottom: 6px;
     }
 
-    p {
+    /* ---------- CARDS ---------- */
+    .card {
+      background: var(--card);
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .card-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .card-title h3 {
+      margin: 0;
+    }
+
+    .toggle {
+      font-size: 1.4rem;
+      color: var(--primary);
+    }
+
+    .card-content {
+      display: none;
+      margin-top: 15px;
+      color: var(--muted);
       line-height: 1.6;
     }
 
-    a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .card {
-      background: #fff;
-      border-radius: 8px;
-      padding: 20px;
-      margin-top: 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-    }
-
-    .button {
+    .tag {
       display: inline-block;
-      margin-top: 10px;
-      padding: 8px 14px;
-      background: #2563eb;
-      color: #fff;
-      border-radius: 6px;
-      font-size: 0.9rem;
-    }
-
-    .button:hover {
-      background: #1e4fd6;
-      text-decoration: none;
-    }
-
-    .gif {
-      max-width: 100%;
-      border-radius: 6px;
-      margin-top: 10px;
-      border: 1px solid #ddd;
+      background: #e0e7ff;
+      color: #1e40af;
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 0.8rem;
+      margin-right: 6px;
+      margin-top: 6px;
     }
 
     footer {
-      margin-top: 60px;
-      font-size: 0.85rem;
-      color: #666;
+      margin-top: 120px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
     }
   </style>
 </head>
+
 <body>
-  <div class="container">
 
-    <h1>Dr. Weihua Deng</h1>
-    <p><strong>Data Science · Cloud Analytics · AI-Assisted Systems</strong></p>
+<nav>
+  <ul>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#projects">Projects</a></li>
+  </ul>
+</nav>
 
-    <p>
-      I build small, real, end-to-end data science systems —
-      focusing on dashboards, cloud-native analytics, and reproducible deployment.
-    </p>
+<div class="container">
+
+<header>
+  <h1>Dr. Weihua Deng</h1>
+  <p>Data Science · AI & ML · Cloud Analytics · End-to-End Systems</p>
+</header>
+
+<!-- ================= EDUCATION ================= -->
+<section id="education">
+  <h2>Education</h2>
+
+  <div class="card">
+    <div class="card-title" onclick="toggle(this)">
+      <h3>PhD – Control Theory & Engineering</h3>
+      <span class="toggle">+</span>
+    </div>
+    <div class="card-content">
+      <p>
+        PhD focusing on distributed control, optimisation, and data-driven modelling.
+        Strong foundation in mathematics, systems theory, and applied machine learning.
+      </p>
+      <span class="tag">Optimisation</span>
+      <span class="tag">ML</span>
+      <span class="tag">Control Systems</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WORK ================= -->
+<section id="work">
+  <h2>Work Experience</h2>
+
+  <div class="card">
+    <div class="card-title" onclick="toggle(this)">
+      <h3>Data Scientist – Insurance & Risk Analytics</h3>
+      <span class="toggle">+</span>
+    </div>
+    <div class="card-content">
+      <p>
+        Built data science pipelines for liability analysis, ESG risk modelling,
+        and automated decision systems using Python, SQL, and cloud platforms.
+      </p>
+      <span class="tag">Python</span>
+      <span class="tag">BigQuery</span>
+      <span class="tag">ML</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title" onclick="toggle(this)">
+      <h3>Researcher – Energy & Smart Buildings</h3>
+      <span class="toggle">+</span>
+    </div>
+    <div class="card-content">
+      <p>
+        Developed predictive control and optimisation models for energy efficiency
+        in buildings using sensor data and machine learning techniques.
+      </p>
+      <span class="tag">Energy</span>
+      <span class="tag">Optimisation</span>
+      <span class="tag">IoT</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <div class="card-title" onclick="toggle(this)">
+      <h3>End-to-End Cloud Analytics Dashboard</h3>
+      <span class="toggle">+</span>
+    </div>
+    <div class="card-content">
+      <p>
+        Built a production-shaped analytics system using Google Cloud Storage,
+        BigQuery, Streamlit, and Streamlit Cloud.
+      </p>
+      <p>
+        Includes authentication, SQL querying, dashboard UI, and deployment.
+      </p>
+      <span class="tag">Streamlit</span>
+      <span class="tag">BigQuery</span>
+      <span class="tag">Cloud</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 Dr. Weihua Deng · Built with GitHub Pages
+</footer>
+
+</div>
+
+<script>
+  function toggle(element) {
+    const content = element.nextElementSibling;
+    const icon = element.querySelector(".toggle");
+
+    if (content.style.display === "block") {
+      content.style.display = "none";
+      icon.textContent = "+";
+    } else {
+      content.style.display = "block";
+      icon.textContent = "–";
+    }
+  }
+</script>
+
+</body>
+</html>
