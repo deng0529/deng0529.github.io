@@ -2,30 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Dr. Weihua Deng | Data Science & AI Systems</title>
+  <title>Dr. Weihua Deng | Data Science & Analytics Systems</title>
 
-  <!-- SEO -->
-  <meta name="description" content="Dr. Weihua Deng – Data Science, Control Optimization, AI Application, Visualization and End-to-End Systems" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Social Preview -->
-  <meta property="og:title" content="Dr. Weihua Deng – Data Science & AI Systems" />
-  <meta property="og:description" content="Education, industry experience, and real-world data science systems." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://deng0529.github.io" />
+  <meta name="description" content="Industry-focused data science systems, analytics dashboards, and AI-assisted decision tools." />
 
   <style>
     :root {
-      --primary: #2563eb;
-      --secondary: #0f172a;
+      --primary: #1d4ed8;
       --bg: #f8fafc;
       --card: #ffffff;
-      --text: #1e293b;
-      --muted: #64748b;
-    }
-
-    * {
-      box-sizing: border-box;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e5e7eb;
     }
 
     body {
@@ -35,93 +24,50 @@
       color: var(--text);
     }
 
-    /* ---------- NAV ---------- */
-    nav {
-      position: sticky;
-      top: 0;
-      background: #ffffff;
-      border-bottom: 1px solid #e5e7eb;
-      z-index: 100;
-    }
-
-    nav ul {
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 12px 20px;
-      max-width: 1100px;
-      margin-inline: auto;
-      gap: 20px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: var(--muted);
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      color: var(--primary);
-    }
-
-    /* ---------- LAYOUT ---------- */
-    .container {
+    header, section, footer {
       max-width: 1100px;
       margin: auto;
-      padding: 60px 20px;
+      padding: 64px 20px;
     }
 
-    header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.2em;
+    h1 { font-size: 2.6rem; }
+    h2 { margin-top: 60px; border-bottom: 2px solid var(--primary); display: inline-block; }
+    h3 { margin-bottom: 0.4em; }
+
+    p { line-height: 1.7; color: var(--muted); }
+
+    .lang-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.85rem;
     }
 
-    header p {
-      font-size: 1.1rem;
-      color: var(--muted);
-    }
-
-    section {
-      margin-top: 80px;
-    }
-
-    section h2 {
-      font-size: 2rem;
-      border-bottom: 2px solid var(--primary);
-      display: inline-block;
-      padding-bottom: 6px;
-    }
-
-    /* ---------- CARDS ---------- */
     .card {
       background: var(--card);
       border-radius: 10px;
-      padding: 20px;
-      margin-top: 25px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 26px;
+      margin-top: 24px;
+      border: 1px solid var(--border);
     }
 
-    .card-title {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      cursor: pointer;
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
     }
 
-    .card-title h3 {
-      margin: 0;
-    }
-
-    .toggle {
-      font-size: 1.4rem;
-      color: var(--primary);
-    }
-
-    .card-content {
-      display: none;
-      margin-top: 15px;
-      color: var(--muted);
-      line-height: 1.6;
+    .gif {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 12px;
+      border: 1px solid var(--border);
     }
 
     .tag {
@@ -130,138 +76,110 @@
       color: #1e40af;
       padding: 4px 10px;
       border-radius: 12px;
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       margin-right: 6px;
       margin-top: 6px;
     }
 
+    .btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 8px 14px;
+      background: var(--primary);
+      color: white;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      text-decoration: none;
+    }
+
     footer {
-      margin-top: 120px;
       text-align: center;
+      font-size: 0.85rem;
       color: var(--muted);
-      font-size: 0.9rem;
     }
   </style>
 </head>
 
 <body>
 
-<nav>
-  <ul>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#work">Work</a></li>
-    <li><a href="#projects">Projects</a></li>
-  </ul>
-</nav>
-
-<div class="container">
+<button class="lang-toggle" onclick="toggleLang()">EN / 中文</button>
 
 <header>
-  <h1>Dr. Weihua Deng</h1>
-  <p>Data Science · AI & ML · Cloud Analytics · End-to-End Systems</p>
+  <h1 data-en="Dr. Weihua Deng" data-zh="邓伟华 博士"></h1>
+  <p
+    data-en="I design and build data science systems that support real-world decisions — from data ingestion to deployment."
+    data-zh="我设计并构建服务于真实决策的数据科学系统，覆盖从数据接入到部署的完整流程。"
+  ></p>
 </header>
 
-<!-- ================= EDUCATION ================= -->
-<section id="education">
-  <h2>Education</h2>
+<section>
+  <h2 data-en="What I Do" data-zh="我做什么"></h2>
+  <p
+    data-en="My work focuses on translating mathematical and statistical ideas into reliable, deployable analytics systems. I help organisations move beyond isolated models towards end-to-end decision-support pipelines."
+    data-zh="我的工作重点是将数学与统计思想转化为可靠、可部署的分析系统，帮助组织从“单一模型”走向“端到端的决策支持系统”。"
+  ></p>
+</section>
 
+<section>
+  <h2 data-en="Background" data-zh="背景"></h2>
   <div class="card">
-    <div class="card-title" onclick="toggle(this)">
-      <h3>PhD – Control Theory & Engineering</h3>
-      <span class="toggle">+</span>
-    </div>
-    <div class="card-content">
-      <p>
-        PhD focusing on distributed control, optimisation, and data-driven modelling.
-        Strong foundation in mathematics, systems theory, and applied machine learning.
-      </p>
-      <span class="tag">Optimisation</span>
-      <span class="tag">ML</span>
-      <span class="tag">Control Systems</span>
-    </div>
+    <h3 data-en="PhD · Data Science & Systems Thinking" data-zh="博士 · 数据科学与系统思维"></h3>
+    <p
+      data-en="Strong foundation in optimisation, control theory, and data-driven modelling, combined with hands-on industry experience."
+      data-zh="具备扎实的优化、控制理论和数据驱动建模基础，并拥有真实行业系统落地经验。"
+    ></p>
+    <span class="tag">Optimisation</span>
+    <span class="tag">ML</span>
+    <span class="tag">Systems</span>
   </div>
 </section>
 
-<!-- ================= WORK ================= -->
-<section id="work">
-  <h2>Work Experience</h2>
+<section>
+  <h2 data-en="Selected Projects" data-zh="代表项目"></h2>
 
-  <div class="card">
-    <div class="card-title" onclick="toggle(this)">
-      <h3>Data Scientist – Insurance & Risk Analytics</h3>
-      <span class="toggle">+</span>
-    </div>
-    <div class="card-content">
-      <p>
-        Built data science pipelines for liability analysis, ESG risk modelling,
-        and automated decision systems using Python, SQL, and cloud platforms.
-      </p>
-      <span class="tag">Python</span>
+  <div class="project-grid">
+
+    <div class="card">
+      <h3 data-en="End-to-End Cloud Analytics Dashboard" data-zh="端到端云端分析仪表盘"></h3>
+      <p
+        data-en="A production-style analytics system enabling interactive exploration of large-scale data for operational decision-making."
+        data-zh="一个生产级分析系统，用于支持大规模数据的交互式分析与业务决策。"
+      ></p>
+
+      <!-- 上传你的 GIF 后替换文件名 -->
+      <img src="dashboard-demo.gif" class="gif" alt="Dashboard demo">
+
       <span class="tag">BigQuery</span>
-      <span class="tag">ML</span>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-title" onclick="toggle(this)">
-      <h3>Researcher – Energy & Smart Buildings</h3>
-      <span class="toggle">+</span>
-    </div>
-    <div class="card-content">
-      <p>
-        Developed predictive control and optimisation models for energy efficiency
-        in buildings using sensor data and machine learning techniques.
-      </p>
-      <span class="tag">Energy</span>
-      <span class="tag">Optimisation</span>
-      <span class="tag">IoT</span>
-    </div>
-  </div>
-</section>
-
-<!-- ================= PROJECTS ================= -->
-<section id="projects">
-  <h2>Projects</h2>
-
-  <div class="card">
-    <div class="card-title" onclick="toggle(this)">
-      <h3>End-to-End Cloud Analytics Dashboard</h3>
-      <span class="toggle">+</span>
-    </div>
-    <div class="card-content">
-      <p>
-        Built a production-shaped analytics system using Google Cloud Storage,
-        BigQuery, Streamlit, and Streamlit Cloud.
-      </p>
-      <p>
-        Includes authentication, SQL querying, dashboard UI, and deployment.
-      </p>
       <span class="tag">Streamlit</span>
-      <span class="tag">BigQuery</span>
       <span class="tag">Cloud</span>
+
+      <a href="YOUR_GUMROAD_LINK" class="btn">View Product</a>
     </div>
+
   </div>
+</section>
+
+<section>
+  <h2 data-en="Writing & Thinking" data-zh="写作与思考"></h2>
+  <p
+    data-en="I write about building real analytics systems, AI-assisted development workflows, and the gap between theory and practice."
+    data-zh="我主要写作关于真实分析系统构建、AI 辅助开发流程，以及理论与实践之间的差距。"
+  ></p>
 </section>
 
 <footer>
-  © 2025 Dr. Weihua Deng · Built with GitHub Pages
+  © 2025 Weihua Deng · GitHub Pages
 </footer>
 
-</div>
-
 <script>
-  function toggle(element) {
-    const content = element.nextElementSibling;
-    const icon = element.querySelector(".toggle");
-
-    if (content.style.display === "block") {
-      content.style.display = "none";
-      icon.textContent = "+";
-    } else {
-      content.style.display = "block";
-      icon.textContent = "–";
-    }
+  let currentLang = "en";
+  function toggleLang() {
+    currentLang = currentLang === "en" ? "zh" : "en";
+    document.querySelectorAll("[data-en]").forEach(el => {
+      el.textContent = el.dataset[currentLang];
+    });
   }
+  toggleLang();
 </script>
 
 </body>
