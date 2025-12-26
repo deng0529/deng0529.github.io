@@ -116,6 +116,17 @@
       line-height: 1.7;
       color: var(--muted);
     }
+    .about-text {
+    text-align: justify;
+    text-justify: inter-word;
+    }
+
+   @media (max-width: 768px) {
+    .about-text {
+     text-align: left;
+    }
+    }
+
 
     /* ---------- CARDS ---------- */
     .card {
@@ -193,7 +204,9 @@
   <div class="links">
   <strong style="color:#9ca3af; font-size:0.75rem;">PROFILES</strong>
 
-  <a href="mailto:weihuadeng0529@gmail.com">✉ Email</a>
+  <a href="mailto:weihuadeng0529@gmail.com">
+  ✉ Email
+  </a>
   <a href="https://github.com/deng0529">GitHub</a>
   <a href="https://www.linkedin.com/in/weihua-deng/" target="_blank">LinkedIn</a>
   <a href="https://medium.com/@dwh197859">Medium</a>  
@@ -209,7 +222,7 @@
 <section>
   <h2 data-en="About" data-zh="关于我"></h2>
 
-  <p
+  <p class="about-text"
     data-en="
 I hold a PhD in Control Theory and Control Engineering, with a strong foundation in optimisation, systems modelling, and data-driven decision-making.
 My academic training focused on modelling complex, uncertain systems and designing reliable optimisation and control strategies.
