@@ -1,215 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Dr. Weihua Deng | Data Science Systems</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <style>
-    :root {
-      --sidebar-bg: #2f2f2f;
-      --main-bg: #f7f7f7;
-      --card-bg: #ffffff;
-      --primary: #3b82f6;
-      --text-light: #e5e7eb;
-      --text-dark: #1f2937;
-      --muted: #6b7280;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: var(--main-bg);
-      color: var(--text-dark);
-      display: flex;
-      min-height: 100vh;
-    }
-
-    /* ---------- SIDEBAR ---------- */
-    .sidebar {
-      width: 280px;
-      background: var(--sidebar-bg);
-      color: var(--text-light);
-      padding: 40px 20px;
-      position: fixed;
-      height: 100vh;
-    }
-
-    .avatar {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto 20px;
-  border: 3px solid #555;
-    }
-
-   .site-footer {
-  margin-top: 4rem;
-  padding: 2.5rem 1rem;
-  border-top: 1px solid #eee;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #777;
-  }
-
-  .site-footer strong {
-  color: #222;
-  font-weight: 600;
-  }
-
-    .sidebar h1 {
-      font-size: 1.4rem;
-      text-align: center;
-      margin-bottom: 6px;
-    }
-
-    .sidebar p {
-      font-size: 0.85rem;
-      text-align: center;
-      color: #cbd5f5;
-      line-height: 1.5;
-    }
-
-    .links {
-      margin-top: 30px;
-      font-size: 0.85rem;
-    }
-
-    .links a {
-      display: block;
-      color: #d1d5db;
-      text-decoration: none;
-      margin: 8px 0;
-    }
-
-    .links a:hover {
-      color: white;
-    }
-
-    .lang-toggle {
-      margin-top: 30px;
-      width: 100%;
-      background: #444;
-      color: white;
-      border: none;
-      padding: 6px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 0.8rem;
-    }
-
-    /* ---------- MAIN ---------- */
-   .main {
-  margin-left: 280px;
-  padding: 60px 60px;
-  width: calc(100% - 280px);
-  display: flex;
-  justify-content: center;
-}
- .content {
-  max-width: 900px;
-  width: 100%;
-}
-    section {
-      margin-bottom: 70px;
-    }
-
-    h2 {
-      border-bottom: 2px solid var(--primary);
-      display: inline-block;
-      padding-bottom: 6px;
-      margin-bottom: 20px;
-    }
-
-    p {
-      line-height: 1.7;
-      color: var(--muted);
-    }
-    .about-text {
-    text-align: justify;
-    text-justify: inter-word;
-    }
-
-   @media (max-width: 768px) {
-    .about-text {
-     text-align: left;
-    }
-    }
-
-
-    /* ---------- CARDS ---------- */
-    .card {
-      background: var(--card-bg);
-      padding: 24px;
-      border-radius: 8px;
-      margin-top: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
-    }
-
-    .project {
-      margin-bottom: 30px;
-    }
-
-    .gif {
-      width: 100%;
-      border-radius: 6px;
-      margin-top: 12px;
-      border: 1px solid #ddd;
-    }
-    .gif {
-       transition: transform 0.2s ease;
-       }
-
-    .gif:hover {
-      transform: scale(1.02);
-      } 
-
-    .tag {
-      display: inline-block;
-      background: #e0e7ff;
-      color: #1e40af;
-      padding: 4px 10px;
-      border-radius: 12px;
-      font-size: 0.75rem;
-      margin-right: 6px;
-      margin-top: 6px;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 6px 12px;
-      background: var(--primary);
-      color: white;
-      text-decoration: none;
-      border-radius: 4px;
-      font-size: 0.8rem;
-    }
-
-    footer {
-      font-size: 0.8rem;
-      color: var(--muted);
-      margin-top: 80px;
-    }
-
-    @media (max-width: 900px) {
-      .sidebar {
-        position: static;
-        width: 100%;
-        height: auto;
-      }
-      .main {
-        margin-left: 0;
-        padding: 30px;
-      }
-    }
-  .demo {display:block;width:100%;border-radius:8px;background:#111;margin-top:16px;} @media(max-width:900px){body{flex-direction:column}.main{width:100%;padding:20px}.sidebar{padding:24px}} </style>
-
-  <!-- Google tag (gtag.js) -->
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Dr. Weihua Deng — independent AI developer, applied researcher and consultant in Manchester, UK. Explainable AI, predictive modelling and optimisation."><title>Dr. Weihua Deng | Applied AI, Data Science &amp; Optimisation | TECT</title><style>:root{--navy:#142b45;--ink:#142b45;--accent:#176b85;--muted:#526477;--bg:#f2f5f8;--line:#dce5ec}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif}a{color:var(--accent)}a:focus-visible,button:focus-visible{outline:3px solid #e6a844;outline-offset:4px}.sidebar{position:fixed;inset:0 auto 0 0;width:280px;background:var(--navy);color:#fff;padding:36px 24px;overflow:auto}.avatar{width:112px;height:112px;border-radius:50%;object-fit:cover;border:3px solid #8faebf;display:block;margin:0 auto 24px}.sidebar h1{font-size:23px;line-height:1.3;text-align:center;margin:0}.sidebar p{color:#d6e3ed;text-align:center;font-size:14px;margin:12px 0}.nav{border-top:1px solid #466078;margin-top:24px;padding-top:16px}.nav a,.links a{display:block;color:#e1ecf4;text-decoration:none;padding:7px 0;font-size:14px}.nav a:hover,.links a:hover{text-decoration:underline}.links{border-top:1px solid #466078;padding-top:12px;margin-top:18px}.lang-toggle{width:100%;padding:10px;background:transparent;border:1px solid #8faebf;color:white;border-radius:6px;cursor:pointer;margin-top:18px}.main{margin-left:280px;padding:48px clamp(24px,5vw,64px)}.content{max-width:1050px;margin:auto}section{margin-bottom:48px}h2{font-size:25px;line-height:1.25;margin:0 0 20px}h3{font-size:20px;line-height:1.35;margin:0 0 10px}p{color:var(--muted);margin:0 0 16px}.hero{background:#fff;border:1px solid var(--line);border-radius:14px;padding:clamp(24px,4vw,44px);border-top:5px solid var(--accent)}.eyebrow{font-size:12px;font-weight:700;letter-spacing:.11em;color:var(--accent);text-transform:uppercase}.hero h2{font-size:clamp(26px,4vw,40px);max-width:800px;margin:12px 0 18px;letter-spacing:-.025em}.btn{display:inline-block;background:var(--accent);color:white;text-decoration:none;padding:9px 15px;border-radius:6px;font-size:14px;font-weight:600;margin:6px 8px 0 0}.btn.secondary{background:white;color:var(--navy);border:1px solid var(--line)}.card{background:#fff;padding:26px;border:1px solid var(--line);border-radius:12px;margin:0 0 20px;box-shadow:0 3px 12px #142b4508}.tag{display:inline-block;font-size:12px;color:#21566b;background:#e9f2f5;border-radius:5px;padding:4px 9px;margin:4px 5px 4px 0}.demo,.gif{display:block;width:100%;border-radius:8px;margin-top:16px;border:1px solid var(--line)}.demo{background:#15212e;aspect-ratio:16/9;object-fit:contain}.skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.skills .card{margin:0;padding:18px}.skills h3{font-size:16px}.skills p{font-size:14px;margin:0}footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:13px}@media(max-width:850px){.sidebar{position:relative;width:100%;padding:24px}.main{margin:0;padding:24px 16px}.nav,.links{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 18px}.lang-toggle{display:block;max-width:240px;margin:18px auto 0}.skills{grid-template-columns:1fr}.card{padding:18px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style><!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X37Q9T9C16"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -218,60 +7,7 @@
 
   gtag('config', 'G-X37Q9T9C16');
 </script>
-</head>
-
-<body>
-
-<div class="sidebar">
-  <img src="avatar.png" class="avatar" alt="Profile photo">
-  
-  <h1 data-en="Dr. Weihua Deng" data-zh="邓玮璍 博士"></h1>
-  <p
-    data-en="AI Developer &amp; Applied Researcher | TECT"
-    data-zh="AI开发与应用研究 | TECT"
-  ></p>
-
-  <div class="links">
-  <strong style="color:#9ca3af; font-size:0.75rem;">PROFILES</strong>
-
-  <a href="mailto:weihuadeng0529@gmail.com">
-  ✉ Email
-  </a>
-  <a href="https://github.com/deng0529">GitHub</a>
-  <a href="https://www.linkedin.com/in/weihua-deng/" target="_blank">LinkedIn</a>
-  <a href="https://medium.com/@dwh197859">Medium</a>  
-</div>
-
-
-  <button class="lang-toggle" onclick="toggleLang()">EN / 中文</button>
-</div>
-
-<div class="main">
-  <div class="content">
-
-<section>
-  <h2 data-en="About" data-zh="关于我"></h2>
-
-  <p class="about-text"
-    data-en="
-I hold a PhD in Control Theory and Control Engineering, with a strong foundation in optimisation, systems modelling, and data-driven decision-making.
-My academic training focused on modelling complex, uncertain systems and designing reliable optimisation and control strategies.
-After academia, I transitioned into applied data science roles, working across industry and research environments.
-I have experience as a data scientist, AI modeler, and applied researcher, delivering explainable machine learning models, analytics platforms, and end-to-end data pipelines for real-world decision problems.
-My work sits at the intersection of mathematical modelling, machine learning, and deployable systems.
-"
-    data-zh="
-我拥有控制理论与控制工程方向的博士学位，具备扎实的优化方法、系统建模以及数据驱动决策基础。
-我的学术训练重点在于复杂不确定系统的建模，以及可靠的优化与控制策略设计。
-离开学术界后，我转向应用型数据科学工作，在行业与研究环境中担任数据科学家、AI 建模工程师和应用研究人员。
-我交付过可解释机器学习模型、分析平台以及端到端数据管道，用于解决真实世界中的决策问题。
-我的工作位于数学建模、机器学习与可部署系统的交叉点。
-"
-  ></p>
-</section>
-
-<section id="recent"><h2 data-en="Recent R&amp;D Projects — TECT" data-zh="近期研发项目 — TECT"></h2><article class="card project"><h3 data-en="Evidence-Grounded AI Risk Intelligence" data-zh="证据驱动的企业风险智能分析"></h3><p data-en="Company filings and governance evidence, LLM-assisted extraction and explainable ER/BRB risk assessment." data-zh="融合企业财报、治理证据、LLM提取与ER/BRB风险评估。"></p><video class="demo" controls muted loop playsinline preload="metadata" src="ai_risk_intelligence.mp4"></video></article><article class="card project"><h3 data-en="Explainable Property Underwriting" data-zh="可解释物业保险核保"></h3><p data-en="A prototype integrating fire and security evidence, explainable risk assessment and human review." data-zh="融合火灾与安防证据、可解释风险评估及人工审核的原型。"></p><video class="demo" controls muted loop playsinline preload="metadata" src="Underwriting_MVP_Walkthrough.mp4"></video><a class="btn" href="https://explainable-property-underwriting-mvp-v2.streamlit.app/" data-en="Live demo" data-zh="在线演示"></a></article><article class="card project"><h3 data-en="Energy Flexibility Optimisation &amp; VPP" data-zh="能源灵活性优化与虚拟电厂"></h3><p data-en="A five-household battery dispatch prototype comparing rule-based control and predictive optimisation." data-zh="五户家庭电池调度原型，对比规则控制与预测优化。"></p><video class="demo" controls muted loop playsinline preload="metadata" src="BatteryFlex_LinkedIn_Demo.mp4"></video></article><article class="card project"><h3 data-en="Battery SOH &amp; RUL Prediction" data-zh="电池健康状态与剩余寿命预测"></h3><p data-en="NASA lithium-ion degradation data, neural networks and physics-guided predictive modelling." data-zh="基于NASA锂电池退化数据、神经网络及物理知识辅助预测。"></p><video class="demo" controls muted loop playsinline preload="metadata" src="battery_rul.mp4"></video></article></section>
-<section>
+</head><body><aside class="sidebar"><img class="avatar" src="avatar.png" alt="Profile photo"><h1  data-en="Dr. Weihua Deng" data-zh="邓玮璍 博士">Dr. Weihua Deng</h1><p  data-en="AI Developer &amp; Applied Researcher" data-zh="AI开发与应用研究">AI Developer &amp; Applied Researcher</p><p  data-en="Independent Consultant · TECT · Manchester, UK" data-zh="独立技术顾问 · TECT · 英国曼彻斯特">Independent Consultant · TECT · Manchester, UK</p><nav class="nav" aria-label="Sections"><a href="#about" data-en="About" data-zh="关于我">About</a><a href="#expertise" data-en="Expertise" data-zh="技术专长">Expertise</a><a href="#recent" data-en="Featured projects" data-zh="近期项目">Featured projects</a><a href="#experience" data-en="Previous projects" data-zh="以往项目">Previous projects</a><a href="#contact" data-en="Work with me" data-zh="合作联系">Work with me</a></nav><div class="links"><a href="mailto:weihuadeng0529@gmail.com" data-en="Email" data-zh="电子邮件">Email</a><a href="https://github.com/deng0529">GitHub</a><a href="https://www.linkedin.com/in/weihua-deng/">LinkedIn</a><a href="https://medium.com/@dwh197859">Medium</a></div><button class="lang-toggle" type="button" id="language">中文 / English</button></aside><main class="main"><div class="content"><section id="about" class="hero"><div class="eyebrow" data-en="APPLIED AI · DATA SCIENCE · ENGINEERING" data-zh="应用AI · 数据科学 · 工程实践">APPLIED AI · DATA SCIENCE · ENGINEERING</div><h2  data-en="From complex data to reliable decisions and deployable solutions." data-zh="从复杂数据到可靠决策与可部署的技术方案">From complex data to reliable decisions and deployable solutions.</h2><p  data-en="PhD in Control Theory and Control Engineering, with UK industry and university research experience in data science, intelligent decision systems, predictive modelling and optimisation. Through TECT, I develop independent research prototypes and practical AI solutions, from problem definition and modelling to interactive applications." data-zh="控制理论与控制工程博士，拥有英国企业数据科学及高校科研经验，专注智能决策、预测建模与优化。通过 TECT 开展独立研发和应用AI解决方案开发，覆盖问题定义、模型构建及交互式应用实现。">PhD in Control Theory and Control Engineering, with UK industry and university research experience in data science, intelligent decision systems, predictive modelling and optimisation. Through TECT, I develop independent research prototypes and practical AI solutions, from problem definition and modelling to interactive applications.</p><p  data-en="Open to technical roles, research collaboration and independent consulting projects." data-zh="欢迎技术岗位机会、科研合作及独立技术咨询与项目委托。">Open to technical roles, research collaboration and independent consulting projects.</p><a class="btn" href="#recent" data-en="Explore projects" data-zh="查看项目">Explore projects</a><a class="btn secondary" href="#contact" data-en="Discuss a project" data-zh="洽谈合作">Discuss a project</a></section><section id="expertise"><h2  data-en="Technical Expertise" data-zh="技术专长">Technical Expertise</h2><div class="skills"><div class="card"><h3  data-en="Applied AI &amp; Machine Learning" data-zh="应用AI与机器学习">Applied AI &amp; Machine Learning</h3><p  data-en="Python, ML, LLM-assisted extraction, rapid prototyping" data-zh="Python、机器学习、大语言模型证据提取、快速原型开发">Python, ML, LLM-assisted extraction, rapid prototyping</p></div><div class="card"><h3  data-en="Explainable AI &amp; Decision Modelling" data-zh="可解释AI与决策建模">Explainable AI &amp; Decision Modelling</h3><p  data-en="ER/BRB, uncertainty modelling, risk analytics" data-zh="ER/BRB、不确定性建模、风险分析">ER/BRB, uncertainty modelling, risk analytics</p></div><div class="card"><h3  data-en="Predictive Modelling &amp; Optimisation" data-zh="预测建模与优化">Predictive Modelling &amp; Optimisation</h3><p  data-en="Time series, neural networks, MPC, control systems" data-zh="时间序列、神经网络、模型预测控制、控制系统">Time series, neural networks, MPC, control systems</p></div><div class="card"><h3  data-en="Data &amp; Application Engineering" data-zh="数据与应用工程">Data &amp; Application Engineering</h3><p  data-en="SQL, BigQuery, Streamlit, APIs, Docker" data-zh="SQL、BigQuery、Streamlit、API、Docker">SQL, BigQuery, Streamlit, APIs, Docker</p></div></div></section><section id="recent"><h2  data-en="Featured R&amp;D Projects" data-zh="近期代表性研发项目">Featured R&amp;D Projects</h2><p  data-en="Independent prototypes developed through TECT, focused on practical applications of AI, decision modelling and optimisation." data-zh="TECT 独立研发原型，聚焦 AI、决策建模与优化技术的实际应用。">Independent prototypes developed through TECT, focused on practical applications of AI, decision modelling and optimisation.</p><article class="card project"><h3  data-en="Evidence-Grounded AI Risk Intelligence" data-zh="证据驱动的企业风险智能分析">Evidence-Grounded AI Risk Intelligence</h3><p  data-en="Turns UK company filings into traceable risk insights through LLM-assisted evidence extraction and explainable Evidential Reasoning (ER) and Belief Rule Base (BRB) models." data-zh="利用大语言模型提取英国企业披露文件中的证据，结合证据推理（ER）与置信规则库（BRB），提供可解释、可追溯的风险分析。">Turns UK company filings into traceable risk insights through LLM-assisted evidence extraction and explainable Evidential Reasoning (ER) and Belief Rule Base (BRB) models.</p><span class="tag">LLM</span><span class="tag">ER/BRB</span><span class="tag">Risk Analytics</span><video class="demo" aria-label="Evidence-Grounded AI Risk Intelligence" controls muted loop playsinline preload="metadata" src="ai_risk_intelligence.mp4"></video></article><article class="card project"><h3  data-en="Explainable Property Underwriting" data-zh="可解释商业财产保险核保">Explainable Property Underwriting</h3><p  data-en="Transforms broker submissions into structured fire and security risk assessments, combining LLM evidence extraction, explainable decision models and human review. An extensible underwriting prototype." data-zh="将经纪人提交的资料转化为结构化火灾与安防风险评估，融合大语言模型证据提取、可解释决策模型与人工审核，形成可扩展的核保原型。">Transforms broker submissions into structured fire and security risk assessments, combining LLM evidence extraction, explainable decision models and human review. An extensible underwriting prototype.</p><span class="tag">LLM</span><span class="tag">Decision Modelling</span><span class="tag">Human-in-the-loop</span><video class="demo" aria-label="Explainable Property Underwriting" controls muted loop playsinline preload="metadata" src="Underwriting_MVP_Walkthrough.mp4"></video><a class="btn" href="https://explainable-property-underwriting-mvp-v2.streamlit.app/" data-en="Live demo" data-zh="在线演示">Live demo</a></article><article class="card project"><h3  data-en="Energy Flexibility Optimisation &amp; Virtual Power Plant (VPP)" data-zh="能源灵活性优化与虚拟电厂（VPP）">Energy Flexibility Optimisation &amp; Virtual Power Plant (VPP)</h3><p  data-en="Coordinates battery dispatch across five households to meet flexibility targets. Explores rule-based control and predictive optimisation, with method selection driven by operating requirements." data-zh="协调五户家庭的电池调度以满足灵活性服务目标，探索规则控制与预测优化，根据实际运行需求选择控制方法。">Coordinates battery dispatch across five households to meet flexibility targets. Explores rule-based control and predictive optimisation, with method selection driven by operating requirements.</p><span class="tag">Battery Dispatch</span><span class="tag">RBC</span><span class="tag">MPC</span><span class="tag">Optimisation</span><video class="demo" aria-label="Energy Flexibility Optimisation &amp; Virtual Power Plant (VPP)" controls muted loop playsinline preload="metadata" src="BatteryFlex_LinkedIn_Demo.mp4"></video></article><article class="card project"><h3  data-en="Battery Health (SOH) &amp; Remaining Useful Life (RUL) Prediction" data-zh="电池健康状态（SOH）与剩余使用寿命（RUL）预测">Battery Health (SOH) &amp; Remaining Useful Life (RUL) Prediction</h3><p  data-en="Uses NASA lithium-ion degradation datasets to explore neural networks and physics-guided models for battery health estimation and lifetime forecasting." data-zh="基于 NASA 锂离子电池退化数据，探索神经网络与物理知识引导的模型，实现电池健康状态估计与剩余寿命预测研究。">Uses NASA lithium-ion degradation datasets to explore neural networks and physics-guided models for battery health estimation and lifetime forecasting.</p><span class="tag">Time Series</span><span class="tag">Neural Networks</span><span class="tag">Physics-guided ML</span><video class="demo" aria-label="Battery Health (SOH) &amp; Remaining Useful Life (RUL) Prediction" controls muted loop playsinline preload="metadata" src="battery_rul.mp4"></video></article></section><section id="experience">
   <h2 data-en="Previous Research &amp; Industry Projects" data-zh="以往科研与行业项目"></h2>
 
   <!-- Project 1 -->
@@ -294,7 +30,7 @@ My work sits at the intersection of mathematical modelling, machine learning, an
     <span class="tag">Explainable AI</span>
     <span class="tag">LLM</span>
     <span class="tag">Risk Analytics</span>
-    <img src="esg_risk0.gif" alt="Dashboard demo" class="gif">
+    <img loading="lazy" src="esg_risk0.gif" alt="Dashboard demo" class="gif">
 
   </div>
 
@@ -318,7 +54,7 @@ My work sits at the intersection of mathematical modelling, machine learning, an
     <span class="tag">Decision Trees</span>
     <span class="tag">Dash</span>
     <span class="tag">Insurance Analytics</span>
-    <img src="smart_claim0.gif" alt="Dashboard demo" class="gif">
+    <img loading="lazy" src="smart_claim0.gif" alt="Dashboard demo" class="gif">
 
   </div>
 
@@ -331,17 +67,17 @@ My work sits at the intersection of mathematical modelling, machine learning, an
 
     <p
       data-en="
-   Developed a data-driven predictive modelling and MPC optimization framework for commercial building heating systems, reducing energy consumption by over 50% while maintaining thermal comfort.
+   Developed a data-driven predictive modelling and MPC optimization framework for commercial building heating systems, demonstrating over 50% energy reduction under evaluated conditions while maintaining thermal comfort.
   "
       data-zh="
- 构建了一套面向商业建筑供暖系统的数据驱动预测建模与 MPC 优化控制框架，在保证热舒适度的同时，将能耗降低 50% 以上。
+ 构建了一套面向商业建筑供暖系统的数据驱动预测建模与 MPC 优化控制框架，在评估条件下，在保证热舒适度的同时实现超过 50% 的节能效果。
  "
     ></p>
 
     <span class="tag">IoT</span>
     <span class="tag">Time Series</span>
     <span class="tag">Optimisation</span>
-    <img src="buildingheating0.gif" alt="Dashboard demo" class="gif">
+    <img loading="lazy" src="buildingheating0.gif" alt="Dashboard demo" class="gif">
   </div>
 
   <!-- Project 4 -->
@@ -353,17 +89,15 @@ My work sits at the intersection of mathematical modelling, machine learning, an
 
     <p
       data-en="
-    GPT-5.2 reliably supported the end-to-end design, development, and deployment of a publicly accessible Marimo dashboard to GitHub Pages.
+    Designed and deployed a public Marimo dashboard to GitHub Pages using AI-assisted development.
    "
       data-zh="
-   GPT-5.2 有效支持了 Marimo 仪表盘从设计到部署的完整流程。
+   借助 AI 辅助开发，完成 Marimo 交互式仪表盘的设计与 GitHub Pages 部署。
 "
     ></p>
 
-    <span class="tag">Control Systems</span>
-    <span class="tag">ML</span>
-    <span class="tag">EV Systems</span>
-    <img src="marimo_githubpage0.gif" alt="Dashboard demo" class="gif">
+    <span class="tag">Marimo</span><span class="tag">AI-assisted Development</span><span class="tag">GitHub Pages</span>
+    <img loading="lazy" src="marimo_githubpage0.gif" alt="Dashboard demo" class="gif">
 
   </div>
 
@@ -386,32 +120,8 @@ My work sits at the intersection of mathematical modelling, machine learning, an
     <span class="tag">Cloud</span>
     <span class="tag">Dashboards</span>
     <span class="tag">Prototyping</span>
-    <img src="streamcloud0.gif" alt="Dashboard demo" class="gif">
+    <img loading="lazy" src="streamcloud0.gif" alt="Dashboard demo" class="gif">
 
   </div>
 
-</section>
-
-<footer>
-  © 2026 <strong>Weihua Deng</strong><br />
-    Problem-driven data science.
-</footer>
-  </div>
-
-</div>
-
-<script>
-  let lang = "zh";
-  function toggleLang() {
-    lang = lang === "en" ? "zh" : "en";
-    document.querySelectorAll("[data-en]").forEach(el => {
-      el.textContent = el.dataset[lang];
-    });
-  }
-  toggleLang();
-  const observer = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting && !matchMedia("(prefers-reduced-motion: reduce)").matches) e.target.play().catch(()=>{}); else e.target.pause(); }), {threshold:0.65});
-  document.querySelectorAll("video.demo").forEach(v => observer.observe(v));
-</script>
-
-</body>
-</html>
+</section><section id="contact" class="card"><h2  data-en="Work with me" data-zh="合作与联系">Work with me</h2><p  data-en="I welcome opportunities in applied AI and data science, research collaboration, and commissioned technical projects. Consulting areas include predictive modelling, explainable decision support, optimisation and proof-of-concept development." data-zh="欢迎应用AI与数据科学相关工作机会、科研合作以及技术项目委托。咨询方向包括预测建模、可解释决策支持、优化控制及概念验证与原型开发。">I welcome opportunities in applied AI and data science, research collaboration, and commissioned technical projects. Consulting areas include predictive modelling, explainable decision support, optimisation and proof-of-concept development.</p><a class="btn" href="mailto:weihuadeng0529@gmail.com" data-en="Email me" data-zh="邮件联系">Email me</a><a class="btn secondary" href="https://www.linkedin.com/in/weihua-deng/" data-en="Connect on LinkedIn" data-zh="LinkedIn 联系">Connect on LinkedIn</a></section><footer>© 2026 Weihua Deng · TECT</footer></div></main><script>let lang="en";function setLang(next){lang=next;document.documentElement.lang=lang==="zh"?"zh-CN":"en";document.querySelectorAll("[data-en]").forEach(el=>el.textContent=el.dataset[lang]);document.getElementById("language").textContent=lang==="en"?"中文 / English":"English / 中文";}document.getElementById("language").addEventListener("click",()=>setLang(lang==="en"?"zh":"en"));setLang("en");if("IntersectionObserver" in window){const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting&&!matchMedia("(prefers-reduced-motion: reduce)").matches)e.target.play().catch(()=>{});else if(!e.isIntersecting)e.target.pause()}),{threshold:.65});document.querySelectorAll("video.demo").forEach(v=>observer.observe(v));}</script></body></html>
