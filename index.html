@@ -207,7 +207,7 @@
         padding: 30px;
       }
     }
-  </style>
+  .demo {display:block;width:100%;border-radius:8px;background:#111;margin-top:16px;} @media(max-width:900px){body{flex-direction:column}.main{width:100%;padding:20px}.sidebar{padding:24px}} </style>
 
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X37Q9T9C16"></script>
@@ -227,8 +227,8 @@
   
   <h1 data-en="Dr. Weihua Deng" data-zh="邓玮璍 博士"></h1>
   <p
-    data-en="Data Science · Control & Optimisation · End-to-End Systems"
-    data-zh="数据科学 · 控制与优化 · 端到端分析系统"
+    data-en="AI Developer &amp; Applied Researcher | TECT"
+    data-zh="AI开发与应用研究 | TECT"
   ></p>
 
   <div class="links">
@@ -270,8 +270,9 @@ My work sits at the intersection of mathematical modelling, machine learning, an
   ></p>
 </section>
 
+<section id="recent"><h2 data-en="Recent R&amp;D Projects — TECT" data-zh="近期研发项目 — TECT"></h2><article class="card project"><h3 data-en="Evidence-Grounded AI Risk Intelligence" data-zh="证据驱动的企业风险智能分析"></h3><p data-en="Company filings and governance evidence, LLM-assisted extraction and explainable ER/BRB risk assessment." data-zh="融合企业财报、治理证据、LLM提取与ER/BRB风险评估。"></p><video class="demo" controls muted loop playsinline preload="none" src="ai_risk_intelligence.mp4"></video></article><article class="card project"><h3 data-en="Explainable Property Underwriting" data-zh="可解释物业保险核保"></h3><p data-en="A prototype integrating fire and security evidence, explainable risk assessment and human review." data-zh="融合火灾与安防证据、可解释风险评估及人工审核的原型。"></p><video class="demo" controls muted loop playsinline preload="none" src="property_underwriting.mp4"></video><a class="btn" href="https://explainable-property-underwriting-mvp-v2.streamlit.app/" data-en="Live demo" data-zh="在线演示"></a></article><article class="card project"><h3 data-en="Energy Flexibility Optimisation &amp; VPP" data-zh="能源灵活性优化与虚拟电厂"></h3><p data-en="A five-household battery dispatch prototype comparing rule-based control and predictive optimisation." data-zh="五户家庭电池调度原型，对比规则控制与预测优化。"></p><video class="demo" controls muted loop playsinline preload="none" src="energy_flexibility.mp4"></video></article><article class="card project"><h3 data-en="Battery SOH &amp; RUL Prediction" data-zh="电池健康状态与剩余寿命预测"></h3><p data-en="NASA lithium-ion degradation data, neural networks and physics-guided predictive modelling." data-zh="基于NASA锂电池退化数据、神经网络及物理知识辅助预测。"></p><video class="demo" controls muted loop playsinline preload="none" src="battery_rul.mp4"></video></article></section>
 <section>
-  <h2 data-en="Selected Projects" data-zh="代表项目"></h2>
+  <h2 data-en="Previous Research &amp; Industry Projects" data-zh="以往科研与行业项目"></h2>
 
   <!-- Project 1 -->
   <div class="card project">
@@ -392,7 +393,7 @@ My work sits at the intersection of mathematical modelling, machine learning, an
 </section>
 
 <footer>
-  © 2025 <strong>Weihua Deng</strong><br />
+  © 2026 <strong>Weihua Deng</strong><br />
     Problem-driven data science.
 </footer>
   </div>
@@ -400,7 +401,7 @@ My work sits at the intersection of mathematical modelling, machine learning, an
 </div>
 
 <script>
-  let lang = "en";
+  let lang = "zh";
   function toggleLang() {
     lang = lang === "en" ? "zh" : "en";
     document.querySelectorAll("[data-en]").forEach(el => {
@@ -408,6 +409,8 @@ My work sits at the intersection of mathematical modelling, machine learning, an
     });
   }
   toggleLang();
+  const observer = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting && !matchMedia("(prefers-reduced-motion: reduce)").matches) e.target.play().catch(()=>{}); else e.target.pause(); }), {threshold:0.65});
+  document.querySelectorAll("video.demo").forEach(v => observer.observe(v));
 </script>
 
 </body>
